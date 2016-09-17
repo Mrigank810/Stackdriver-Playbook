@@ -1,0 +1,6 @@
+- name: apply common configuration to all nodes
+  hosts: all
+  remote_user: ec2-user
+  sudo: yes
+  roles:
+    - common
